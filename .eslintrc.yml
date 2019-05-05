@@ -1,0 +1,12 @@
+plugins:
+    - prettier
+extends:
+    - airbnb
+    - prettier
+    - prettier/react
+globals:
+    graphql: true
+rules:
+    prettier/prettier: error
+settings:
+    import/core-modules: ['react', 'react-helmet']
