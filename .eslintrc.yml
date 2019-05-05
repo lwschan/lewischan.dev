@@ -9,4 +9,8 @@ globals:
 rules:
     prettier/prettier: error
 settings:
+    import/resolver:
+        node:
+            paths:
+            - "."
     import/core-modules: ['react', 'react-helmet']
