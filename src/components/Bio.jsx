@@ -13,7 +13,7 @@ import { rhythm } from 'src/utils/typography';
 
 const bioQuery = graphql`
     query BioQuery {
-        avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        avatar: file(absolutePath: { regex: "/favicon-icon.png/" }) {
             childImageSharp {
                 fixed(width: 50, height: 50) {
                     ...GatsbyImageSharpFixed
