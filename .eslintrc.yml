@@ -1,5 +1,7 @@
 plugins:
     - prettier
+env:
+    browser: true
 extends:
     - airbnb
     - prettier

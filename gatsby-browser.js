@@ -2,4 +2,6 @@
 import 'typeface-montserrat';
 import 'typeface-merriweather';
 
-exports.onServiceWorkerUpdateReady= () => window.location.reload(true);
+export default function onServiceWorkerUpdateReady() {
+    window.location.reload(true);
+}
