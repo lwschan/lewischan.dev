@@ -6,6 +6,7 @@ module.exports = {
         siteUrl: `https://lewischan.dev/`,
         social: {
             twitter: `yeowwwai`,
+            github: 'lewisgauss',
         },
     },
     plugins: [
