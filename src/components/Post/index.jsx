@@ -7,6 +7,7 @@ import {
 import { Link, graphql } from 'gatsby';
 
 import Layout from 'src/components/Layout';
+import PostHeader from 'src/components/Post/Header';
 import SEO from 'src/components/SEO';
 import Bio from 'src/components/Bio';
 import { rhythm, scale } from 'src/utils/typography';
@@ -25,7 +26,7 @@ const propTypes = {
     }).isRequired,
 };
 
-function BlogPostTemplate({ data, location, pageContext }) {
+function Post({ data, location, pageContext }) {
     const post = data.markdownRemark;
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
@@ -36,7 +37,7 @@ function BlogPostTemplate({ data, location, pageContext }) {
                 title={post.frontmatter.title}
                 description={post.frontmatter.description || post.excerpt}
             />
-            <h1>{post.frontmatter.title}</h1>
+            <PostHeader>{post.frontmatter.title}</PostHeader>
             <p
                 style={{
                     ...scale(-1 / 5),
@@ -83,9 +84,9 @@ function BlogPostTemplate({ data, location, pageContext }) {
     );
 }
 
-BlogPostTemplate.propTypes = propTypes;
+Post.propTypes = propTypes;
 
-export default BlogPostTemplate;
+export default Post;
 
 export const pageQuery = graphql`
     query BlogPostBySlug($slug: String!) {
