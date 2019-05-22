@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-    children: PropTypes.shape({}).isRequired,
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})])
+        .isRequired,
 };
 
 function Header({ children }) {
