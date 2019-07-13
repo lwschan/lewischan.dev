@@ -10,6 +10,8 @@
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
+    "@stefanprobst/lokijs": "^1.5.6-b",
+    "acorn": "5.7.3",
     "gatsby": "^2.9.6",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-feed": "^2.2.3",
@@ -40,11 +42,12 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^5.0.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.18.2"
   },
