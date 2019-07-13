@@ -6,6 +6,7 @@ module.exports = {
         siteUrl: `https://lewischan.dev/`,
         social: {
             twitter: `yeowwwai`,
+            github: 'lewisgauss',
         },
     },
     plugins: [
@@ -22,6 +23,21 @@ module.exports = {
             options: {
                 path: `${__dirname}/content/assets`,
                 name: `assets`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            options: {
+                fonts: [
+                    {
+                        family: `Roboto`,
+                        variants: [`100`, `300`, `400`, `500`, `700`, `900`],
+                    },
+                    {
+                        family: `Open Sans`,
+                        variants: [`300`, `400`, `600`, `700`, `800`],
+                    },
+                ],
             },
         },
         {
@@ -60,7 +76,72 @@ module.exports = {
                 forceSSL: true,
             },
         },
-        `gatsby-plugin-feed`,
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: {
+                query: `
+                {
+                    site {
+                        siteMetadata {
+                            title
+                            description
+                            siteUrl
+                            site_url: siteUrl
+                        }
+                    }
+                }
+                `,
+                feeds: [
+                    {
+                        serialize: ({ query: { site, allMarkdownRemark } }) => {
+                            return allMarkdownRemark.edges.map((edge) => {
+                                return Object.assign(
+                                    {},
+                                    edge.node.frontmatter,
+                                    {
+                                        description: edge.node.excerpt,
+                                        date: edge.node.frontmatter.date,
+                                        url:
+                                            site.siteMetadata.siteUrl +
+                                            edge.node.fields.slug,
+                                        guid:
+                                            site.siteMetadata.siteUrl +
+                                            edge.node.fields.slug,
+                                        custom_elements: [
+                                            {
+                                                'content:encoded':
+                                                    edge.node.html,
+                                            },
+                                        ],
+                                    },
+                                );
+                            });
+                        },
+                        query: `
+                        {
+                          allMarkdownRemark(
+                            sort: { order: DESC, fields: [frontmatter___date] },
+                          ) {
+                            edges {
+                              node {
+                                excerpt
+                                html
+                                fields { slug }
+                                frontmatter {
+                                  title
+                                  date
+                                }
+                              }
+                            }
+                          }
+                        }
+                        `,
+                        output: '/rss.xml',
+                        title: 'lewischan.dev RSS Feed',
+                    },
+                ],
+            },
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -71,6 +152,7 @@ module.exports = {
                 theme_color: `#663399`,
                 display: `minimal-ui`,
                 icon: `content/assets/favicon-icon.png`,
+                include_favicon: true,
             },
         },
         `gatsby-plugin-offline`,

@@ -12,7 +12,7 @@ const propTypes = {
     location: PropTypes.shape({}).isRequired,
 };
 
-function BlogIndex({ data, location }) {
+function Index({ data, location }) {
     const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
 
@@ -30,11 +30,14 @@ function BlogIndex({ data, location }) {
                         <h3
                             style={{
                                 marginBottom: rhythm(1 / 4),
+                                fontFamily: 'Roboto',
+                                fontWeight: 500,
                             }}
                         >
                             <Link
                                 style={{
                                     boxShadow: `none`,
+                                    textDecoration: `none`,
                                 }}
                                 to={node.fields.slug}
                             >
@@ -57,9 +60,9 @@ function BlogIndex({ data, location }) {
     );
 }
 
-BlogIndex.propTypes = propTypes;
+Index.propTypes = propTypes;
 
-export default BlogIndex;
+export default Index;
 
 export const pageQuery = graphql`
     query {
