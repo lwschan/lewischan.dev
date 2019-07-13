@@ -1,5 +1,6 @@
 plugins:
     - prettier
+    - react-hooks
 env:
     browser: true
 extends:
@@ -10,6 +11,8 @@ globals:
     graphql: true
 rules:
     prettier/prettier: error
+    react-hooks/rules-of-hooks: error
+    react-hooks/exhaustive-deps: error
 settings:
     import/resolver:
         node:
