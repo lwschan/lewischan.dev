@@ -11,7 +11,7 @@
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
     "@stefanprobst/lokijs": "^1.5.6-b",
-    "acorn": "5.7.3",
+    "acorn": "5.7.4",
     "gatsby": "^2.9.6",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-feed": "^2.2.3",
