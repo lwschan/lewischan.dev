@@ -1,21 +1,44 @@
-plugins:
-    - prettier
-    - react-hooks
-env:
-    browser: true
 extends:
-    - airbnb
-    - prettier
-    - prettier/react
+  - plugin:react/recommended
+  - plugin:prettier/recommended
+  - airbnb
+  - airbnb/hooks
+env:
+  browser: true
+  es6: true
 globals:
-    graphql: true
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+  graphql: true
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - react
 rules:
-    prettier/prettier: error
-    react-hooks/rules-of-hooks: error
-    react-hooks/exhaustive-deps: error
+  react/jsx-filename-extension: 0
+  react/jsx-wrap-multilines:
+    - 2
+    - prop: 'ignore'
+  react/jsx-props-no-spreading:
+    - 2
+    - exceptions:
+        - 'Component'
+        - 'Route'
+  react/destructuring-assignment: 0
+  import/no-extraneous-dependencies: 0
+  object-curly-newline: 0
+  no-console: 0
+  no-plusplus:
+    - error
+    - allowForLoopAfterthoughts: true
 settings:
-    import/resolver:
-        node:
-            paths:
-            - "."
-    import/core-modules: ['react', 'react-helmet']
+  import/resolver:
+    node:
+      paths:
+        - './src'
+  react:
+    pragma: React
+    version: 16.13.1

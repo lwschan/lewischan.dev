@@ -1,10 +1,21 @@
 {
-    "editor.formatOnSave": false,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "eslint.autoFixOnSave": true,
-    "javascript.preferences.importModuleSpecifier": "non-relative",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.suggestionActions.enabled": false
+  "editor.formatOnSave": false,
+  "javascript.format.enable": false,
+  "json.format.enable": true,
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggestionActions.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.lintTask.enable": true,
+  "files.eol": "\n"
 }
