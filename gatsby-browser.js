@@ -1,1 +1,1 @@
-exports.onServiceWorkerUpdateReady = () => window.location.reload(true);
+import './src/styles/global.scss';
