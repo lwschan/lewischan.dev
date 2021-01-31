@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://lewischan.netlify.com/* https://lewischan.dev/:splat 301!
