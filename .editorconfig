@@ -6,16 +6,16 @@ end_of_line = lf
 # Set default charset
 [*.js]
 charset = utf-8
+indent_size = 4
+indent_style = space
 
 # Matches the exact files either package.json
 [*.json]
 indent_style = space
-indent_size = 2
+indent_size = 4
 trim_trailing_whitespace = true
 
 # Indentation override for all JS under src directory
 [src/**/*.js]
-indent_style = tab
-indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true

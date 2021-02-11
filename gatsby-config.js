@@ -1,6 +1,6 @@
 module.exports = {
-  siteMetadata: {
-    title: "lewischan.dev",
-  },
-  plugins: [],
+    siteMetadata: {
+        title: 'lewischan.dev',
+    },
+    plugins: [],
 };
