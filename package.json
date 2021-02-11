@@ -5,18 +5,32 @@
   "description": "lewischan.dev",
   "author": "Lewis Chan",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "Lewis Chan",
+    "lewischan.dev"
   ],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "./node_modules/.bin/eslint"
   },
   "dependencies": {
     "gatsby": "^2.32.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "eslint": "7.19.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "^2.2.1"
   }
 }
