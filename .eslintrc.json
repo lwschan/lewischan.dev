@@ -16,5 +16,18 @@
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": [2, 4],
         "react/jsx-filename-extension": 0
-    }
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": ["node_modules", "src"],
+                "paths": ["./src"]
+            }
+        },
+        "react": {
+            "pragma": "React",
+            "version": "16.13.1"
+        }
+    },
+    "ignorePatterns": ["jsconfig.json"]
 }
