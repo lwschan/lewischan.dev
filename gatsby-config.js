@@ -9,5 +9,6 @@ module.exports = {
                 lang: 'en',
             },
         },
+        'gatsby-plugin-sass',
     ],
 };
