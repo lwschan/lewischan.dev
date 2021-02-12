@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from 'components/Header';
 
 // styles
 const pageStyles = {
@@ -100,7 +99,6 @@ const links = [
 function IndexPage() {
     return (
         <main style={pageStyles}>
-            <Header />
             <title>Home Page</title>
             <h1 style={headingStyles}>
                 Congratulations
