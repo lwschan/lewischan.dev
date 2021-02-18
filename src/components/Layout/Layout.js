@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Header from 'components/Header';
 import styles from './layout.module.scss';
 
 const propTypes = {
@@ -7,7 +8,12 @@ const propTypes = {
 };
 
 function Layout({ children }) {
-    return <div className={styles.layout}>{children}</div>;
+    return (
+        <div className={styles.layout}>
+            <Header />
+            {children}
+        </div>
+    );
 }
 
 Layout.propTypes = propTypes;
