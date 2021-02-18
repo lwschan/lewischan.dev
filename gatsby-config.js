@@ -10,5 +10,13 @@ module.exports = {
             },
         },
         'gatsby-plugin-sass',
+        {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+                google: {
+                    families: ['IBM Plex Sans', 'Noto Sans'],
+                },
+            },
+        },
     ],
 };
