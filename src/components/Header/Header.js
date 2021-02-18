@@ -1,7 +1,12 @@
 import React from 'react';
+import HomeLink from 'components/HomeLink';
 
 function Header() {
-    return <div>Hello</div>;
+    return (
+        <header>
+            <HomeLink />
+        </header>
+    );
 }
 
 export default Header;
