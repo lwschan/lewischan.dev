@@ -14,7 +14,7 @@ module.exports = {
             resolve: 'gatsby-plugin-web-font-loader',
             options: {
                 google: {
-                    families: ['IBM Plex Sans', 'Noto Sans'],
+                    families: ['Noto Sans'],
                 },
             },
         },
