@@ -11,11 +11,12 @@ module.exports = {
         },
         'gatsby-plugin-sass',
         {
-            resolve: 'gatsby-plugin-web-font-loader',
+            resolve: `gatsby-plugin-google-fonts`,
             options: {
-                google: {
-                    families: ['Noto Sans'],
-                },
+                fonts: [
+                    `IBM Plex Sans:100,200,300,400,500,600,700`, // you can also specify font weights and styles
+                ],
+                display: 'swap',
             },
         },
     ],
