@@ -1,10 +1,16 @@
 import React from 'react';
 import HomeLink from 'components/HomeLink';
+import Navigation from 'components/Navigation';
 
 function Header() {
     return (
         <header>
-            <HomeLink />
+            <div>
+                <HomeLink />
+            </div>
+            <div>
+                <Navigation />
+            </div>
         </header>
     );
 }
