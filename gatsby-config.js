@@ -3,13 +3,13 @@ module.exports = {
         title: 'lewischan.dev',
     },
     plugins: [
+        'gatsby-plugin-sass',
         {
             resolve: 'gatsby-plugin-html-attributes',
             options: {
                 lang: 'en',
             },
         },
-        'gatsby-plugin-sass',
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {

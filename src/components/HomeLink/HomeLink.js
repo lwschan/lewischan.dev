@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from './homelink.module.scss';
+import * as styles from './homelink.module.scss';
 
 function HomeLink() {
     return (
