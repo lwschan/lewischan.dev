@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "jsx": "preserve",
     "baseUrl": "./src"
   },
   "include": ["src"],
