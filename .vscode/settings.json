@@ -1,21 +1,27 @@
 {
-  "editor.formatOnSave": false,
-  "javascript.format.enable": false,
-  "json.format.enable": true,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnPaste": true
+  },
   "[javascript]": {
-    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
     "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.tabSize": 2,
     "editor.formatOnSave": true
   },
-  "javascript.preferences.importModuleSpecifier": "non-relative",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.suggestionActions.enabled": false,
+  "[makefile]": {
+    "editor.insertSpaces": false
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.lintTask.enable": true,
   "files.eol": "\n"
 }

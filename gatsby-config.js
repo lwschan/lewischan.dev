@@ -1,81 +1,43 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
-    title: 'lewischan.dev',
-    author: 'Lewis Chan',
-    description: 'My cool personal blog project, powered by Gatsby',
-    siteUrl: 'https://lewischan.dev/',
-    social: {
-      twitter: 'yeowwwai',
-      github: 'lewisgauss',
-    },
-    home: {
-      title: 'hello!',
-      description:
-        'a blog that talks about my journey and life as a software developer',
-    },
+    siteUrl: "https://www.yourdomain.tld",
+    title: "lewischan.dev",
   },
   plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        name: 'markdown-pages',
-        path: `${__dirname}/_data`,
+        trackingId: "UA-140062861-1",
       },
     },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              classPrefix: 'language-',
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-emojis',
-          },
-        ],
+        icon: "src/images/icon.png",
       },
     },
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-source-filesystem",
       options: {
-        trackingId: 'UA-140062861-1',
-        head: true,
-        anonymize: true,
-        respectDNT: true,
-        sampleRate: 100,
-        siteSpeedSampleRate: 100,
-        forceSSL: true,
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'lewischan.dev',
-        short_name: 'lewischan.dev',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'static/favicon-icon.png',
-        include_favicon: true,
+        name: "pages",
+        path: "./src/pages/",
       },
+      __key: "pages",
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify-cms',
   ],
 };
