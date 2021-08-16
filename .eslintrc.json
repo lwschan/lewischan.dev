@@ -1,5 +1,11 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
   "plugins": ["@typescript-eslint"],
   "extends": [
     "airbnb-typescript",
@@ -10,25 +16,16 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "env": {
-    "browser": false,
+    "browser": true,
     "node": true
-  },
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "project": "./tsconfig.json"
   },
   "globals": {
     "window": true,
     "module": true
   },
   "rules": {
-    "no-use-before-define": [
-      "error",
-      {
-        "functions": false
-      }
-    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "react/react-in-jsx-scope": "off"
   }
 }

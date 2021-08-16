@@ -17,6 +17,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "es2020"
+    ],
     "types": [
       "react",
       "react-dom",
@@ -24,5 +28,5 @@
     ]
   },
   "exclude": ["node_modules"],
-  "include": ["src", "gatsby-node.js", "gatsby-config.js"]
+  "include": ["src", "*.js"]
 }
