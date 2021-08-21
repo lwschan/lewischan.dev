@@ -12,7 +12,10 @@
     "editor.formatOnSave": true
   },
   "[scss]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
   },
   "[json]": {
     "editor.formatOnSave": true
@@ -23,5 +26,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true
 }

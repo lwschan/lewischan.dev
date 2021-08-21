@@ -1,6 +1,8 @@
+/* eslint-disable global-require */
+
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://lewischan.dev',
     title: 'lewischan.dev',
   },
   plugins: [
@@ -13,7 +15,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-root-import',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('./tailwind.config')],
+      },
+    },
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-google-analytics',
