@@ -15,12 +15,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-root-import',
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        postCssPlugins: [require('tailwindcss'), require('./tailwind.config')],
-      },
-    },
+    'gatsby-plugin-sass',
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-google-analytics',

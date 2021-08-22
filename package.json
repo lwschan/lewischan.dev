@@ -2,7 +2,7 @@
   "name": "lewischan.dev",
   "version": "1.0.0",
   "private": true,
-  "description": "My cool blog written in TypeScript and Gatsby",
+  "description": "My website that is written in TypeScript",
   "author": "Lewis Chan",
   "license": "MIT",
   "homepage": "https://github.com/lewisgauss/lewischan.dev#readme",
@@ -29,7 +29,6 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "autoprefixer": "^10.3.1",
     "gatsby": "^3.12.0",
     "gatsby-plugin-google-analytics": "^3.12.0",
     "gatsby-plugin-image": "^1.12.0",
@@ -45,8 +44,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.38.0",
-    "tailwindcss": "^2.2.7"
+    "sass": "^1.38.0"
   },
   "devDependencies": {
     "@tsconfig/create-react-app": "^1.0.2",
@@ -56,7 +54,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "eslint": "^7.31.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-airbnb-typescript": "^13.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
@@ -72,6 +70,7 @@
     "typescript": "^4.3.5"
   },
   "lint-staged": {
-    "*.{.js,.ts,.jsx,.tsx}": "eslint . --ext .js,.ts,.jsx,.tsx"
+    "*.{.js,.ts,.jsx,.tsx}": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "*.scss": "stylelint"
   }
 }
