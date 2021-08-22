@@ -1,3 +1,5 @@
+import './AppWrapper.module.scss';
+
 type AppWrapperProps = {
   children: JSX.Element[] | JSX.Element;
 };
