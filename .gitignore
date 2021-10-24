@@ -1,0 +1,5 @@
+# Project specific folders and files
+.cache/
+node_modules/
+public
+.env
