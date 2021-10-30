@@ -48,6 +48,6 @@
     "prettier": "2.4.1"
   },
   "lint-staged": {
-    "src/**/*{.js}": "prettier --write --ignore-unknown \"src/**/*{.js,.jsx}\""
+    "*.{.js,.jsx}": "eslint . --ext .js,.jsx"
   }
 }
