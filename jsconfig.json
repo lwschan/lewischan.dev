@@ -1,5 +1,19 @@
 {
-  "json.schemas": [{
-    "$schema": "https://json.schemastore.org/jsconfig"
-  }]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "module": "es6",
+    "target": "es2021"
+  },
+  "types": "dist/index.d.ts",
+  "json.schemas": [
+    {
+      "$schema": "https://json.schemastore.org/jsconfig"
+    }
+  ]
 }
