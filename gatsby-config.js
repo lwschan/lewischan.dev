@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'lewischan.dev',
+    siteUrl: process.env.SITE_URL,
+    title: process.env.SITE_TITLE,
   },
   // jsxRuntime: 'automatic', // Not available yet
   plugins: [
