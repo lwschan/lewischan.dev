@@ -2,7 +2,9 @@
   "root": true,
   "extends": [
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "prettier",
+    "plugin:react/jsx-runtime" // Needed for the new JSX transform feature from React
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -10,6 +12,9 @@
   },
   "env": {
     "browser": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0
   },
   "settings": {
     "import/resolver": {
