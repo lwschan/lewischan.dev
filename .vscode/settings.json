@@ -4,6 +4,7 @@
     "source.fixAll.eslint": true
   },
   "files.eol": "\n",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
   "json.schemas": [
     {
       "$schema": "https://json.schemastore.org/jsconfig"

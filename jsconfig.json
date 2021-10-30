@@ -3,12 +3,23 @@
     "src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "public"
   ],
   "compilerOptions": {
     "baseUrl": "src",
+    "moduleResolution": "node",
     "module": "es6",
     "target": "es2021"
   },
-  "types": "dist/index.d.ts"
+  "typeAcquisition": {
+    "exclude": [
+      "got",
+      "micromark-util-decode",
+      "micromark-util-encode",
+      "ordered-binary",
+      "source-map-js",
+      "source-map"
+    ]
+  }
 }
