@@ -10,10 +10,5 @@
     "module": "es6",
     "target": "es2021"
   },
-  "types": "dist/index.d.ts",
-  "json.schemas": [
-    {
-      "$schema": "https://json.schemastore.org/jsconfig"
-    }
-  ]
+  "types": "dist/index.d.ts"
 }

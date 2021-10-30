@@ -4,4 +4,9 @@
     "source.fixAll.eslint": true
   },
   "files.eol": "\n",
+  "json.schemas": [
+    {
+      "$schema": "https://json.schemastore.org/jsconfig"
+    }
+  ]
 }
