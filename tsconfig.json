@@ -1,10 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "gatsby-browser.tsx"
   ],
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "module": "ESNext",
     "target": "ES5",
     "allowJs": true,
@@ -12,7 +17,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,

@@ -1,5 +1,3 @@
-import * as React from "react"
-
 // styles
 const pageStyles = {
   color: "#232129",
