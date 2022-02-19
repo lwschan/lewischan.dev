@@ -1,17 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "include": [
-    "src/**/*",
-    "gatsby-browser.tsx",
-    "gatsby-config.js",
-    "gatsby-node.js"
-  ],
+  "include": ["src/**/*", "gatsby-browser.tsx", "gatsby-config.js", "gatsby-node.js"],
   "compilerOptions": {
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "target": "ES5",
     "allowJs": true,

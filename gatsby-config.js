@@ -1,9 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `lewischan.dev`,
-      siteUrl: `https://www.yourdomain.tld`,
+    title: 'lewischan.dev',
+    siteUrl: 'https://www.yourdomain.tld',
   },
-  plugins: [
-
-  ]
-}
+  plugins: [],
+};
