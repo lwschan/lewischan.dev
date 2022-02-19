@@ -38,6 +38,9 @@ module.exports = {
         icon: './src/images/favicon.png',
       },
     },
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
   jsxRuntime: 'automatic',
 };
