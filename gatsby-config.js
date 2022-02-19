@@ -3,5 +3,6 @@ module.exports = {
     title: 'lewischan.dev',
     siteUrl: 'https://www.yourdomain.tld',
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-postcss'],
+  jsxRuntime: 'automatic',
 };

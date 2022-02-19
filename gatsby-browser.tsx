@@ -1,1 +1,1 @@
-export {};
+import './src/css/global.css';
