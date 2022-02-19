@@ -2,7 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "include": [
     "src/**/*",
-    "gatsby-browser.tsx"
+    "gatsby-browser.tsx",
+    "gatsby-config.js",
+    "gatsby-node.js"
   ],
   "compilerOptions": {
     "lib": [

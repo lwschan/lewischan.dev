@@ -1,11 +1,9 @@
-const IndexPage = () => {
-  const abc = 123
-
+function IndexPage() {
   return (
     <main>
       <title>Home Page</title>
     </main>
-  )
+  );
 }
 
-export default IndexPage
+export default IndexPage;
