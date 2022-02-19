@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'lewischan.dev',
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://lewischan.dev',
   },
-  plugins: ['gatsby-plugin-postcss'],
+  plugins: ['gatsby-plugin-postcss', 'gatsby-plugin-root-import'],
   jsxRuntime: 'automatic',
 };

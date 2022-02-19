@@ -4737,6 +4737,11 @@ gatsby-plugin-postcss@^5.7.0:
     "@babel/runtime" "^7.15.4"
     postcss-loader "^4.3.0"
 
+gatsby-plugin-root-import@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-root-import/-/gatsby-plugin-root-import-2.0.8.tgz#374a738ccf91c74bf86e158213d09a25ef64b4ac"
+  integrity sha512-y07q3c+Pz1qoW3XdkAvl5PbO2+gc0GhcfZYq+Msw2JBe5M+FSByhQVDhZYCVMRVZz0qx6L4qr3w3i04/k4S2HA==
+
 gatsby-plugin-typescript@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.7.0.tgz#e59d47dff9fdeb8cb9597ef37bb265d00aa6401d"
