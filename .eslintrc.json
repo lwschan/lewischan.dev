@@ -18,5 +18,13 @@
     "browser": true,
     "es6": true,
     "node": true
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ]
 }
