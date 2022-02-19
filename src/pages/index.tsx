@@ -1,12 +1,7 @@
-import Header from 'components/Header';
+import Layout from 'components/Layout';
 
 function IndexPage() {
-  return (
-    <main>
-      <Header />
-      <div className="text-3xl font-bold underline">Home Page</div>
-    </main>
-  );
+  return <Layout>Hello World</Layout>;
 }
 
 export default IndexPage;
