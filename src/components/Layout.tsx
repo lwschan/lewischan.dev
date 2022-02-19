@@ -7,10 +7,10 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div className="container py-8">
       <Header />
       <main>{children}</main>
-    </>
+    </div>
   );
 }
 
