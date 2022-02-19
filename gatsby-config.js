@@ -14,7 +14,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-root-import',
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [process.env.GOOGLE_ANALYTICS_TRACKING_ID],
         gtagConfig: {
@@ -24,6 +24,18 @@ module.exports = {
           head: false,
           respectDNT: true,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'lewischan.dev',
+        short_name: 'lewischan.dev',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#6893e3',
+        display: 'standalone',
+        icon: './src/images/logo.png',
       },
     },
   ],

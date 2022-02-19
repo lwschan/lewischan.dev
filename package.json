@@ -20,6 +20,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.2",
     "gatsby": "^4.7.2",
+    "gatsby-plugin-manifest": "^4.7.0",
     "gatsby-plugin-postcss": "^5.7.0",
     "postcss": "^8.4.6",
     "react": "^17.0.2",
