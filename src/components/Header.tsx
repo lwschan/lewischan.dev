@@ -2,18 +2,18 @@ import { Link } from 'gatsby';
 
 function Header() {
   return (
-    <header>
-      <div className="container py-2">
-        <div className="flex flex-row justify-between">
+    <div className="fixed w-full h-14 bg-gray-50 drop-shadow-sm">
+      <header className="container h-full py-2">
+        <div className="h-full flex flex-row justify-between items-center">
           <div className="flex-initial ">
-            <Link to="/" className="text-3xl font-medium">
-              lewischan.dev
+            <Link to="/" className="text-3xl font-bold font-mono">
+              lc;
             </Link>
           </div>
           <div>test</div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }
 

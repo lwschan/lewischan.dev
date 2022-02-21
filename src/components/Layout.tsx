@@ -7,10 +7,13 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <>
       <Header />
-      <main className="container py-2">{children}</main>
-    </div>
+      <div className="h-14" />
+      <div className="bg-gray-50">
+        <main className="container py-2">{children}</main>
+      </div>
+    </>
   );
 }
 

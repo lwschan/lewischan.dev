@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+      mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
     },
     container: {
       center: true,
