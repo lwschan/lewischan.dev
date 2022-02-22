@@ -9,8 +9,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
-      <div className="h-14" />
-      <div className="bg-gray-50">
+      <div>
         <main className="container py-2">{children}</main>
       </div>
     </>
