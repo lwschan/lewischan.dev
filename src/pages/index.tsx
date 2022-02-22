@@ -4,7 +4,7 @@ function IndexPage() {
   return (
     <Layout>
       <div className="min-h-screen">
-        <h1 className="italic">Hello World</h1>
+        <h1 className="italic">Hello World!</h1>
       </div>
     </Layout>
   );
