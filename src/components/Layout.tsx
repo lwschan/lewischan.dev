@@ -10,7 +10,7 @@ function Layout({ children }: LayoutProps) {
     <>
       <Header />
       <div>
-        <main className="container py-2">{children}</main>
+        <main className="container py-4">{children}</main>
       </div>
     </>
   );
