@@ -5,14 +5,12 @@ function Navigation() {
     <nav>
       <ul className="flex justify-around">
         <li className="mr-4 last:mr-0">
-          <Link className="" to="/about">
-            About
-          </Link>
+          <Link to="/about">About</Link>
         </li>
         <li className="mr-4 last:mr-0">
-          <Link to="https://github.com/lewisgauss" target="_blank">
+          <a href="https://github.com/lewisgauss" target="_blank" rel="noreferrer noopener">
             GitHub
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
