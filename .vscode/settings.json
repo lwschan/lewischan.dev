@@ -28,5 +28,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "eslint.workingDirectories": ["."]
+  "eslint.workingDirectories": ["."],
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }

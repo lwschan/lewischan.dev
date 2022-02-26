@@ -1,5 +1,5 @@
-import HomeLink from './HomeLink';
-import Navigation from './Navigation';
+import Navigation from 'components/Navigation';
+import HomeLink from 'components/HomeLink';
 
 function Header() {
   return (

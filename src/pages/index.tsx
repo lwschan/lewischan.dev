@@ -1,7 +1,7 @@
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
 
-function IndexPage() {
+function Index() {
   return (
     <Layout>
       <Helmet>
@@ -17,4 +17,4 @@ function IndexPage() {
   );
 }
 
-export default IndexPage;
+export default Index;
