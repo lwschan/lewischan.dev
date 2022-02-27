@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: lewisgauss/lewischan.dev
+  branch: main
 
 media_folder: static/assets
 public_folder: /assets
