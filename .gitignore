@@ -4,3 +4,12 @@ public
 .env.production
 .env.development
 .env
+
+# yarn related files
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
