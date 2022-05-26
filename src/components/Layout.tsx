@@ -10,7 +10,11 @@ interface LayoutProps {
 function Layout({ title, children }: LayoutProps) {
   return (
     <>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      >
         <title>{`${title} - lewischan.dev`}</title>
       </Helmet>
       <Header />
