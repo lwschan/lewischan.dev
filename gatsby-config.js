@@ -7,6 +7,7 @@ module.exports = {
   siteMetadata: {
     title: 'lewischan.dev',
     siteUrl: 'https://lewischan.dev',
+    description: 'My cool blog written in Gatsby.',
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -29,6 +30,7 @@ module.exports = {
       options: {
         name: 'lewischan.dev',
         short_name: 'lewischan.dev',
+        description: 'My cool blog written in Gatsby.',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#6893e3',
