@@ -1,22 +1,17 @@
+import SEO from 'components/SEO';
 import { ReactNode } from 'react';
-import { Helmet } from 'react-helmet';
 import Header from './Header';
 
 interface LayoutProps {
   title: string;
+  description?: string;
   children: ReactNode;
 }
 
-function Layout({ title, children }: LayoutProps) {
+function Layout({ title, description, children }: LayoutProps): JSX.Element {
   return (
     <>
-      <Helmet
-        htmlAttributes={{
-          lang: 'en',
-        }}
-      >
-        <title>{`${title} - lewischan.dev`}</title>
-      </Helmet>
+      <SEO title={title} description={description} />
       <Header />
       <div>
         <main className="container py-4">{children}</main>

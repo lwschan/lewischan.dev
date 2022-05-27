@@ -5,9 +5,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'lewischan.dev',
+    siteName: 'lewischan.dev',
     siteUrl: 'https://lewischan.dev',
-    description: 'My cool blog written in Gatsby.',
+    defaultDescription: 'My cool blog written in Gatsby.',
   },
   plugins: [
     'gatsby-plugin-postcss',
