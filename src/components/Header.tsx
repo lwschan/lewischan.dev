@@ -3,8 +3,8 @@ import HomeLink from 'components/HomeLink';
 
 function Header() {
   return (
-    <div className="w-full">
-      <header className="container h-full py-6">
+    <div className="w-full border-b fixed bg-white">
+      <header className="container h-14 py-2">
         <div className="h-full flex flex-row justify-between items-center">
           <div className="flex-initial">
             <HomeLink />

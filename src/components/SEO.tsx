@@ -2,6 +2,21 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 
+interface SEOProps {
+  title: string;
+  description?: string;
+}
+
+interface SiteQuery {
+  site: {
+    siteMetadata: {
+      siteName: string;
+      siteUrl: string;
+      defaultDescription: string;
+    };
+  };
+}
+
 const query = graphql`
   query SEO {
     site {
@@ -14,30 +29,13 @@ const query = graphql`
   }
 `;
 
-interface SEOProps {
-  title: string;
-  description?: string;
-}
-
-interface SiteMetadata {
-  siteName: string;
-  siteUrl: string;
-  defaultDescription: string;
-}
-
-interface SiteQuery {
-  site: {
-    siteMetadata: SiteMetadata;
-  };
-}
-
 function SEO({ title, description }: SEOProps) {
   const { site } = useStaticQuery<SiteQuery>(query);
   const { pathname } = useLocation();
 
   const tags = {
     title: `${title} - ${site.siteMetadata.siteName}`,
-    description: description || site.siteMetadata.defaultDescription,
+    description: description ?? site.siteMetadata.defaultDescription,
     url: `${site.siteMetadata.siteUrl}${pathname}`,
   };
 
@@ -46,8 +44,8 @@ function SEO({ title, description }: SEOProps) {
       htmlAttributes={{
         lang: 'en',
       }}
-      title={tags.title}
     >
+      {tags.title && <title>{tags.title}</title>}
       {tags.description && <meta name="description" content={tags.description} />}
       {tags.url && <meta property="og:url" content={tags.url} />}
       {tags.title && <meta property="og:title" content={tags.title} />}

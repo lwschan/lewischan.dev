@@ -8,11 +8,12 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-function Layout({ title, description, children }: LayoutProps): JSX.Element {
+function Layout({ title, description, children }: LayoutProps) {
   return (
     <>
       <SEO title={title} description={description} />
       <Header />
+      <span className="block h-14" />
       <div>
         <main className="container py-4">{children}</main>
       </div>
