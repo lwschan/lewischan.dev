@@ -8,7 +8,7 @@ function Navigation() {
           <Link to="/about">About</Link>
         </li>
         <li className="mr-4 last:mr-0">
-          <a href="https://github.com/lewisgauss" target="_blank" rel="noreferrer noopener">
+          <a href="https://github.com/lwschan" target="_blank" rel="noreferrer noopener">
             GitHub
           </a>
         </li>
