@@ -1,0 +1,21 @@
+{
+    "name": "lewischan.dev",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/react": "^4.1.1",
+        "@astrojs/tailwind": "^5.1.3",
+        "@types/react": "^19.0.2",
+        "@types/react-dom": "^19.0.2",
+        "astro": "^5.1.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tailwindcss": "^3.4.17"
+    },
+    "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+}
